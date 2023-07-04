@@ -1,0 +1,40 @@
+.logo1 {
+    justify-content: space-between;
+flex-direction: row;
+
+
+}
+.logo1 img {
+    height:40px;
+    flex-direction: row;
+margin-right:20px;
+height:50vh;
+border-radius: 10px;;
+
+}
+
+
+.logo2 {
+    justify-content: space-between;
+flex-direction: row;
+
+text-align: center;
+background-color: antiquewhite;
+height:70px;
+border-radius:50px;
+}
+
+.logo2 h4{
+    text-transform: capitalize;
+    font-family: Algerian;
+
+}
+
+.form1 input{
+    justify-content: center;
+    margin-left:30px;
+    height:30px;
+    border-color: none;
+    
+
+}

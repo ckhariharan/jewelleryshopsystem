@@ -1,0 +1,175 @@
+
+  
+  <mat-toolbar class="mat-elevation-z8">
+    <button
+      mat-icon-button
+      *ngIf="sidenav.mode === 'over'"(click)="sidenav.toggle()" style="margin-left: 50px;">
+      <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+      <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+    </button>
+   
+  <br/>  </mat-toolbar>
+  
+  
+<mat-sidenav-container style="background-color:rgba(235, 217, 16, 0.582);border-radius: 20px;">
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+      <img
+        class="avatar mat-elevation-z8"
+        src='/assets/icon.jpg' 
+      />
+  
+      <h4 style="font-size: 11px;color:rgb(239, 253, 39);font-family: algerian;" class="name"><b>CK JEWELLERY's AND DESIGNS</b></h4>
+      <p class="designation" style="color:yellowgreen;font-size:15px;font-family: algerian;">DESIGNS</p>
+  
+      <mat-divider></mat-divider>
+  
+      <button mat-button class="menu-button" routerLink="/purchase">
+        <mat-icon style="color:yellow">home</mat-icon>
+         <span>Home</span>
+  
+  
+      </button>
+      <mat-divider></mat-divider>
+      <button mat-button class="menu-button" routerLink="/gbangle" >
+        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+        <span>Bangles_Section</span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/gneckles" >
+        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+        <span>Necklace_section</span>
+      </button>
+     
+  
+      <button mat-button class="menu-button" routerLink="/gearrings"  >
+        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+        <span>Earrings_Section</span>
+      </button>
+  
+      <button mat-button class="menu-button"  routerLink="/grings"  >
+        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+        <span>Rings_Section</span>
+      </button>
+      <mat-divider></mat-divider>
+      <button mat-button class="menu-button"  routerLink="/view"   >
+        <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+
+        <span>Read</span>
+      </button>
+      <button mat-button class="menu-button"  routerLink="/gabout"  >
+        <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+
+        <span>About</span>
+      </button>
+  
+  
+    </mat-sidenav>
+    
+    <mat-sidenav-content>
+      <br/>
+      <br/>
+      <h1 style="text-align: center;font-size: 60px;font-family: algerian;">Necklaces</h1>
+      <h1 style="text-align: center;font-size: 30px;font-family: algerian;"><b>*******</b></h1>
+    
+    
+<div class="content mat-elevation-z8" style="height:350px">
+    
+
+      <section id="s" style="height: 125%;">
+    
+    
+            <div class="container" style="display:flex;width: 100%; ">
+            <div class="logo1" >
+            <a routerLink="/couchprac5"><img src='https://staticimg.titan.co.in/Tanishq/Catalog/512113NSSAA00_2.jpg' style="border-top-right-radius: 60px;border-top-left-radius: 60px;" alt="Logo"></a>
+            <div class="logo2">
+              <br/>
+              <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac5">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Jiterndra Nec...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
+                
+                  <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 66,780</b>
+                <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>1,11,300</del></b>
+                 
+                  <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha;font-display: grid-template ;width:50px;" routerLink="/couchprac5"><b>BUY</b></button></h3></h4></h4></h3></h4>
+                     
+            </div>
+            </div>
+            
+            <div class="logo1">
+                <a routerLink="/couchprac6"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVDTqPOpkux4YYlrCsyZuaLGvU-Z9d1n29JQ&usqp=CAU'style="border-top-right-radius: 60px;border-top-left-radius: 60px;" alt="Logo"></a>
+                <div class="logo2">
+                  <br/>
+                  <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac6">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Gold Plate...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
+                    <h3 style="font-size: 15px;margin-right: 13px;font-family:latha;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
+                    
+                      <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                        <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;52%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹64,580.64 </b>
+                    <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>1,34,543</del></b>
+                  
+                      <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha;font-display: grid-template ;width:50px;" routerLink="/couchprac6"><b>BUY</b></button></h3></h4></h4></h3></h4>
+                         
+                </div>
+                </div>
+                
+            <div class="logo1">
+                <a routerLink="/couchprac7"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJC0QOjyY-psrXbFhwXHfCi3NdXUr-fUED8tCNNJ71Vizo7IrVz-2ZLwrHmK05AHu2_N4&usqp=CAU' style="border-top-right-radius: 60px;border-top-left-radius: 60px;" alt="Logo"></a>
+                <div class="logo2">
+                  <br/>
+                  <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac7">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Crafty Pent...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
+                    <h3 style="font-size: 15px;margin-right: 13px;font-family:latha;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
+                    
+                      <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                        <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 86,170</b>
+                    <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>1,23,100</del></b>
+                  
+                      <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha;font-display: grid-template ;width:50px;" routerLink="/couchprac7"><b>BUY</b></button></h3></h4></h4></h3></h4>
+                         
+                </div>
+                </div>
+                
+            <div class="logo1">
+                <a routerLink="/couchprac8"><img src='data:image/jpeg;base64,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' style="border-top-right-radius: 60px;border-top-left-radius: 60px;" alt="Logo"></a>
+                <div class="logo2">
+                  <br/>
+                  <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac8">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Oval Neckl...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
+                    <h3 style="font-size: 15px;margin-right: 13px;font-family:latha;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
+                    
+                      <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                        <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;53%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 54,097</b>
+                    <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>1,15,100</del></b>
+                  
+                      <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha;font-display: grid-template ;width:50px;" routerLink="/couchprac8"><b>BUY</b></button></h3></h4></h4></h3></h4>
+                         
+                </div>
+                </div>
+            
+                <div class="logo1">
+                    <a routerLink="/couchprac9"><img src='https://image.reliancejewels.com/Jewels/images/productImages/183/22-kt-gold-necklace-set-large_135e97161aa2a8892fc6f4d53790e5fc.jpg' style="border-top-right-radius: 60px;border-top-left-radius: 60px;" alt="Logo"></a>
+                    <div class="logo2">
+                      <br/>
+                      <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac9">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Srijagada...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
+                        <h3 style="font-size: 15px;margin-right: 13px;font-family:latha;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
+                        
+                          <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                            <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 53,680</b>
+                        <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>1,34,200</del></b>
+                      
+                          <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha;font-display: grid-template ;width:50px;" routerLink="/couchprac9"><b>BUY</b></button></h3></h4></h4></h3></h4>
+                             
+                    </div>
+                    </div>
+            </div>
+            </section>
+       
+  <br/><br/>
+  
+  
+  
+  
+  
+  
+ 
+      </div>
+  
+  
+    </mat-sidenav-content>
+  </mat-sidenav-container>

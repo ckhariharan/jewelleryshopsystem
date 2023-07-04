@@ -1,0 +1,89 @@
+
+<div class="container">
+  <div class="form">
+     <div class="top" style="display: flex;justify-content: space-between;">
+      <div class="t1">
+<button style="margin-left:150px;margin-top:40px;border-color: rgb(252, 248, 30); border-radius:9px;width:100px;height:40px;font-family: latha;font-display:inherit ;font-size: medium;background:ghostwhite;color:rgb(34, 6, 6)" routerLink="/gearrings"><b>Back</b></button></div>
+
+</div>
+
+<div class="form1" style="display:flex;padding-left: 9px; padding:5px;background-color: rgb(255, 255, 255)">   
+  <form [formGroup]="employeeFormGroup" style="display: block;margin-right: 20px;">
+    <h2 style="text-align: center;font-family: algerian;font-size:15px;margin-left:20px;margin-top: 10px;">enter ur details and buy our products</h2>
+    <h2 style="text-align: left;font-size: 15px;font-family: latha;margin-left: 12px;">Customer_Name
+    <div class="in"style="display:flex;padding-left: 10px; ">
+      <input placeholder="First_name" style="margin-right: 10px;" formControlName="employee_name" type="text" />&nbsp;
+      <input style="background-color: none;" formControlName="dat" readonly name="button" class="custom_button" type=""  />
+</div></h2>
+<mat-error style="font-family: 'Times New Roman', Times, serif; font-size: 10px; margin-right: 170px;" *ngIf="employeeFormGroup.get('employee_name')?.invalid"> Only alphabetic characters are allowed.</mat-error>
+
+
+
+
+<h1 style="text-align: left;font-size: 15px;font-family: latha;margin-left: 12px;">Design &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input style="background-color: none; width:222px;" formControlName="product" name="button" class="custom_button" type="button" value=""  /></h1>
+   <h1 style="text-align: left;font-size: 15px;font-family: latha;margin-left: 12px;">Price Before Discount &nbsp;
+    <input style="background-color: none; width:222px;" formControlName="amount1" name="button" class="custom_button" type="button" value=""  />
+  </h1>
+  
+  
+  
+  
+  
+  
+  <h1 style="text-align: left;font-size: 15px;font-family: latha;margin-left: 12px;">Discount &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input style="background-color: none; width:222px;" formControlName="perc" name="button" class="custom_button" type="button" value=""  />
+  </h1> 
+  
+<h1 style="text-align: left;font-size: 15px;font-family: latha;margin-left: 12px;">Customer_Address 
+
+  <textarea style="border-radius: 10px;height: 30px;width:280px; margin-right:10px;margin-left:65px" placeholder="Address... " formControlName="password" type="text"></textarea>
+
+</h1>
+</form>
+       
+
+
+
+
+  
+<div class="content mat-elevation-z8" style="width:440px;border-radius: 50px;" >
+<div class="f" style="display:flex; ">
+
+<div class="logo3" >
+<a routerLink="/couchprac13"><img src='https://m.media-amazon.com/images/I/71gcM56FwzL._UY625_.jpg' alt="Logo"></a>
+<div>
+  <section  class="getform">
+    <form  [formGroup]="employeeFormGroup">
+      <h1 style="text-align: left;font-size: 15px;font-family: latha;margin-left: 45px;">Quantity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price After Discount &nbsp;&nbsp;&nbsp;
+             </h1>  
+
+           <h2>
+                           <div class="in"style="display:flex; ">
+                  <input style="width:40px;height:10px;margin-left:40px;" matInput placeholder="qty" min="1"  formControlName="quantity" (click)="calculate()"type="number" />&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             <input style="width:80px;margin-left: 40px;" placeholder="0" formControlName="b"  name="button" class="custom_button"  type="button" value="{{balan}} ₹"  />
+
+                           </div>
+
+                         <input style="border-radius: 15px;margin-left: 2px;margin-top: 1px;width:70px;border-color: none;font-display:inherit;" name="button" class="custom_button" type="button" value="Buy" [disabled]="!employeeFormGroup.valid" (click)="saveAction()" />
+</h2>
+
+</form>
+</section></div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+

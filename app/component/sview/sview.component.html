@@ -1,0 +1,166 @@
+
+  
+  <mat-toolbar class="mat-elevation-z8">
+<button style="margin-left:110px;border-color:ghostwhite;; margin-top: 10px;border-radius:9px;width:100px;height:40px;font-family: latha;font-display:inherit ;font-size: medium;background:ghostwhite;color:rgb(34, 6, 6)" routerLink="/dashboard1"><b>Back</b></button>
+
+    <br/><button style="margin-left: 690px;width:80px;border-color: ghostwhite; border-radius:9px;height:40px;font-family: latha;font-display: grid-template ;font-size: medium;background: none;color:rgb(183, 31, 31)" (click)="printx()"><b>Print</b></button>
+
+     </mat-toolbar>
+
+
+
+     <div class="back" style="background-color: beige;">
+   
+      <mat-sidenav-container style="border-radius: 20px;margin-left: 80px;height:200vh;margin-right: 80px;">
+        
+        <h1 style="font-family: algerian;margin-top:30px;text-align:center;color:rgb(183, 165, 165);font-size: 60px;border-color: rgb(54, 58, 62);">silver records</h1>
+
+    
+      
+        <div class="bet" style="display: flex; padding:5px;">
+
+
+     <mat-form-field style="width:180px;height:73px;margin-left: 860px;" >
+
+    <mat-label style="font-size: 20px;font-family: latha;"> &nbsp;&nbsp;&nbsp;&nbsp; Search User...</mat-label>
+      <mat-icon matprefix  >search
+      </mat-icon>
+      <input  matInput (keyup)="applyFilter($event)" style="height:70px" #input>
+    
+     </mat-form-field>
+    
+    </div>
+
+
+
+    
+
+
+
+ 
+
+
+    <div class="mat-elevation-z8" style="margin-right: 30px;margin-left: 30px;">
+
+
+     <form [formGroup]="employeeFormGroup">
+ <table mat-table [dataSource]="this.Service.dataSource"  >
+ 
+   
+<br/>
+
+   
+
+ <!-- Position Column -->
+ <ng-container matColumnDef="Name">
+ <th mat-header-cell *matHeaderCellDef><b  style="color:rgb(236, 141, 26)"> Customer_Name</b> </th>
+ <td mat-cell *matCellDef="let employee"> 
+   <div *ngIf="employee.isEdit">
+     <input style="background-color:rgb(239, 224, 224); color: rgb(50, 45, 45); height:30px;border-radius: 10px;font-family: latha;font-size: 20px;text-align: center;text-transform: capitalize;width:80px;border: none;" 
+      matInput formControlName="employee_name" value=" {{employee['employee_name']}}">
+      
+<mat-error style="font-family: 'Times New Roman', Times, serif; font-size: 1px; margin-right: 170px;" *ngIf="employeeFormGroup.get('employee_name')?.invalid"> </mat-error>
+   </div>
+   <div *ngIf="!employee.isEdit">
+
+   {{employee['employee_name']}}
+   </div>
+ </td>
+ </ng-container>
+ 
+ <!-- Name Column -->
+ <ng-container matColumnDef="address">
+  <th mat-header-cell *matHeaderCellDef> <b style="color:rgb(236, 141, 26)">Customer_Address </b></th>
+  <td mat-cell *matCellDef="let employee">
+    <div *ngIf="employee.isEdit">
+    <input style="background-color: rgb(239, 224, 224); color: rgb(50, 45, 45); height:30px;border-radius: 10px;font-family: latha;font-size: 15px;text-align: center;text-transform: capitalize;width:80px;border: none;"
+    matInput formControlName="password" value=" {{employee['password']}}">
+    </div>
+    <div *ngIf="!employee.isEdit" >
+      {{employee['password']}}
+      </div>
+     </td>
+  </ng-container>
+ 
+
+ 
+
+  
+  <ng-container matColumnDef="product">
+    <th mat-header-cell *matHeaderCellDef><b  style="color:rgb(236, 141, 26)"> Jewelles_details </b></th>
+    <td mat-cell *matCellDef="let employee"> 
+      <div atyle="font-family:latha;"><b>
+      Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; <b style="color:gray">{{employee['product']}}</b><br/>Amount&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(126, 111, 111)">{{employee['amount']}}</b><br/> Discount&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:red">{{employee['perc']}}</b></b>
+      </div>
+    </td>
+    </ng-container>
+
+
+   
+ <ng-container matColumnDef="date">
+   <th mat-header-cell *matHeaderCellDef> <b  style="color:rgb(236, 141, 26)">Date</b> </th>
+   <td mat-cell *matCellDef="let employee"> 
+     <div style="font-size: 13px;">
+
+      <b> {{employee['dat']}}</b>
+     </div>
+   </td>
+   </ng-container>
+
+
+   <ng-container matColumnDef="quantity">
+    <th mat-header-cell *matHeaderCellDef> <b  style="color:rgb(236, 141, 26)">Qty</b> </th>
+    <td mat-cell *matCellDef="let employee">
+      
+      <div *ngIf="!employee.isEdit">
+       <b>{{employee['quantity']}}</b>
+        </div>
+       </td>
+    </ng-container>
+ 
+
+    <ng-container matColumnDef="total">
+      <th mat-header-cell *matHeaderCellDef><b  style="color:rgb(236, 141, 26)"> Total</b> </th>
+      <td mat-cell *matCellDef="let employee">
+     
+        <div *ngIf="!employee.isEdit">
+        <b style="color:gray;">  {{employee['balance']}}</b>
+          </div>
+         </td>
+      </ng-container>
+
+   
+
+<ng-container matColumnDef="Actions">
+   <th mat-header-cell *matHeaderCellDef mat-sort-header> <b  style="color:rgb(236, 141, 26);">Actions</b> </th>
+   <td mat-cell *matCellDef="let employee">
+     <div class="action-btn" *ngIf="employee.isEdit">
+       <button mat-icon-button color="primary" (click)="saveAction()">
+         <mat-icon>save</mat-icon>
+         </button>
+         <button mat-icon-button color="primary" (click)="employee.isEdit = false">
+           <mat-icon>cancel</mat-icon>
+           </button>
+       </div>
+       <div *ngIf="!employee.isEdit">
+       <button mat-icon-button color="primary" (click)="onEdit(employee); editAction(employee)">
+         <mat-icon>edit</mat-icon>
+         </button>
+         <button mat-icon-button  color="warn" (click)="deleteAction(employee)">
+           <mat-icon>delete</mat-icon>
+         </button>
+     </div>
+   </td>
+   </ng-container>
+
+
+     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+   <tr mat-row *matRowDef="let employees; columns: displayedColumns;"></tr>
+   </table></form>   
+
+</div>
+
+</mat-sidenav-container>
+
+
+</div>
