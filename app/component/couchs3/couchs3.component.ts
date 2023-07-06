@@ -88,7 +88,7 @@ export class Couchs3Component {
        }
         
    
-       //this.fetchAction();
+     
      
     this.onEdit('item');
      }
