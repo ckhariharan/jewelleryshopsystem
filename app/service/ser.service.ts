@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
 })
 export class SerService {
   couchDBUrl: string = 'https://784ea086-d974-431c-aa48-7801aa7b2561-bluemix.cloudantnosqldb.appdomain.cloud'
-  couchDBUsername: string = xxxx-xxxx-xxxx
+  couchDBUsername: string = xxxx-xxxx
    couchDBPassword: string = '69c1d2737d371d9f6b7f6009287e6ccc'
    databaseName: string = 'jewel'
    employees: Array<any> = [];
