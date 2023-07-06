@@ -88,7 +88,6 @@ amount :[1300],
       /* else {
        alert("Some of fields not valid")
        }*/
-       //this.fetchAction();
      
     this.onEdit('item');
      }
