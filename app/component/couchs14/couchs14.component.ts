@@ -87,8 +87,6 @@ amount :[3300],
        }
         
    
-       //this.fetchAction();
-     
     this.onEdit('item');
      }
        fetchAction() {
