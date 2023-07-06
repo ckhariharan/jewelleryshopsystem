@@ -1,12 +1,10 @@
-import { Component, Input,ViewChild, ViewContainerRef,OnInit, ElementRef } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { SerService } from '../../service/ser.service';
 import { FormBuilder } from '@angular/forms';
 
-import { MatSidenav } from '@angular/material/sidenav';
-import { Validators,  FormControl } from '@angular/forms';
 import  Swal  from 'sweetalert2';
-import {  Data, Router } from '@angular/router';
+import {  Router } from '@angular/router';
 
 @Component({
   selector: 'app-couchprac',
