@@ -22,7 +22,7 @@ submitForm(form:any):void{
     Swal.fire('please fill all the fields','','warning')
 
   }
-  else if(this.email==="hari1@gmail.com" && this.password==="harihari")
+  else if(this.email==="hari1@gmail.com" || this.email==="hari2@gmail.com && this.password==="harihari")
   {
     localStorage.setItem('email',this.email);
     this.router.navigateByUrl('purchase');
