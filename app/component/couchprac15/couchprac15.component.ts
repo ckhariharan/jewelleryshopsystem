@@ -88,7 +88,7 @@ amount :[41300],
        this.Service.updateDocument(bulkDocsArray);
        }
     
-       //this.fetchAction();
+   
      
     this.onEdit('item');
      }
