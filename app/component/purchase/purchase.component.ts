@@ -10,9 +10,9 @@ export class PurchaseComponent implements OnInit{
 
 
 constructor(public router:Router){}
-  ngOnInit(): void {
+ /* ngOnInit(): void {
 
- }
+ }*/
 
 
 
