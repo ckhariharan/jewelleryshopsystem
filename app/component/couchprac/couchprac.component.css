@@ -14,7 +14,7 @@ background-size:1280px 580px;
 
 
 font-size: 20px;
-font-family: Algerian;
+font-family: Algerian, sans-serif;
 }
 
 
@@ -32,7 +32,7 @@ margin-left:230px;
 margin-right: 200px;
 padding: 19px;
 font-size: 20px;
-font-family: Algerian;
+font-family: Algerian, sans-serif;
 
 
 }
@@ -57,7 +57,6 @@ input{
 nav {
   
   
-    height: 50px;
     display: flex;
     align-items: center;
 
@@ -123,7 +122,7 @@ height: 90px;
     justify-content: space-between;
 flex-direction: row;
 margin-right:200px;
-margin-left: 40px;;
+margin-left: 40px;
 border-radius: 30px;
 height:70vh;
 margin-top: 4px;
@@ -131,7 +130,7 @@ margin-bottom:5px;
 background-color: rgba(174, 174, 68, 0.336) ;   /* rgba(248, 248, 13, 0.336)*/
 }
 .logo3 img {
-    height:40px;
+
     flex-direction: row;
 margin-right:0px;
 height:35vh;

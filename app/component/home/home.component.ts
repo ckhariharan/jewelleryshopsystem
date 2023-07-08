@@ -19,10 +19,10 @@ element.scrollInttoView({behavior : 'smooth', block:'start'});
 
 }
 
-
+/*
 ngOnInit(): void {
 }
-
+*/
 
 login(){
   localStorage.removeItem('email');

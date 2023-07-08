@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 import { SerService } from '../../service/ser.service';
 import { FormBuilder, Validators } from '@angular/forms';
 
-import {  Data, Router } from '@angular/router';
+import {   Router } from '@angular/router';
 import Swal from 'sweetalert2';
 @Component({
   selector: 'app-couchprac7',
@@ -88,7 +88,7 @@ amount :[123100],
      }
       
      
-     //this.fetchAction();
+     
    
   this.onEdit('item');
    }

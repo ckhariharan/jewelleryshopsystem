@@ -5,11 +5,11 @@ flex-direction: row;
 
 }
 .logo1 img {
-    height:40px;
+   
     flex-direction: row;
 margin-right:20px;
 height:50vh;
-border-radius: 10px;;
+border-radius: 10px;
 
 }
 
@@ -26,7 +26,7 @@ border-radius:50px;
 
 .logo2 h4{
     text-transform: capitalize;
-    font-family: Algerian;
+    font-family: Algerian, sans-serif;
 
 }
 

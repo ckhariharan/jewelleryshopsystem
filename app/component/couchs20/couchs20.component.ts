@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 import { Ser1Service } from '../../service/ser1.service';
 import { FormBuilder, Validators } from '@angular/forms';
 
-import {  Data, Router } from '@angular/router';
+import {   Router } from '@angular/router';
 import Swal from 'sweetalert2';
 @Component({
   selector: 'app-couchs20',
@@ -82,7 +82,6 @@ amount :[2900],
        this.Service.updateDocument(bulkDocsArray);
        }
   
-       //this.fetchAction();
      
     this.onEdit('item');
      }

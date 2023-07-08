@@ -1,7 +1,7 @@
 nav {
   
   
-    height: 50px;
+
     display: flex;
     align-items: center;
     height: 90px;
@@ -74,12 +74,12 @@ nav {
     text-align: center;
     border-radius: 30px;
     font-size: 20px;
-    font-family: "Algerian";
+    font-family: Algerian, sans-serif;
 }
 button{
   transition-duration: 0.4s;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) ;
-  transition:0.3s;
+
   opacity: 0.5;
   
 }

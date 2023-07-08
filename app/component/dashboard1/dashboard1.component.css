@@ -58,14 +58,14 @@ mat-toolbar {
     font-weight: normal;
     
     color: rgb(233, 245, 124);
-    font-family: algerian;
+    font-family: algerian, sans-serif;
   }
   
   .designation {
     margin-top: 0.1px;
     font-size: 0.9rem;
     color: rgb(215, 232, 63);
-    font-family: algerian;
+    font-family: algerian, sans-serif;
   }
   
   mat-divider {
@@ -84,11 +84,11 @@ margin-right:10px;
 
 }
 .logo1 img {
-    height:40px;
+    
     flex-direction: row;
 margin-right:10px;
 height:50vh;
-border-radius: 40px;;
+border-radius: 40px;
 width: 217px;
 }
 
@@ -104,7 +104,7 @@ border-radius:50px;
 
 .logo2 h4{
     text-transform: capitalize;
-    font-family: Algerian;
+    font-family: Algerian, sans-serif;
 
 }
 
@@ -122,7 +122,7 @@ border-radius: 15px;
 margin-top: 5px;
 
 font-size: 20px;
-font-family: Algerian;
+font-family: Algerian, sans-serif;
 
 
 
@@ -130,7 +130,7 @@ font-family: Algerian;
 button{
   transition-duration: 0.4s;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) ;
-  transition:0.3s;
+  
   opacity: 0.5;
   
 }
