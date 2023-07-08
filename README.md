@@ -5,23 +5,32 @@
 _
 #### 1.   About the Project
 ####       •	build with
-####       •	Features
-####       •	Installation
-####       •	Project Structure
-####       •	Dependencies
-####       •	Contributing
-####       •	License
-####       •	Acknowledgements
+#### 2.	Features
+#### 3.	Installation
+#### 4.	Project Structure
+#### 5. Dependencies
+#### 6. Contributing
+#### 7. License
+#### 8. Acknowledgements
 _
 
-**About the project**
+## About the project
 
   **jewellery shop system** is a jewellery shop enterprise developed using Angular 13, Material UI, and IBM CouchDB as the backend database.
   
 As a sole developer, the project will be hosted on **Firebase Hosting.**                                    
 
 The system includes inline editing within tables and supports **CRUD (Create, Read, Update, Delete)** operations for managing loan-related data.
+
+
+******Build with******
+<br>
+<br>
+<img src=https://camo.githubusercontent.com/29026b68c52288230bf32bc2268e47e5c3b81dba23106fb062fcc0541f8e9529/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f416e67756c61722d4444303033313f7374796c653d666f722d7468652d6261646765266c6f676f3d616e67756c6172266c6f676f436f6c6f723d7768697465>
+
 ## Features
+
+
 
 
 Project         :   Fiscal Note
