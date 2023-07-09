@@ -37,7 +37,7 @@ The system includes inline editing within tables and supports `CRUD (Create, Rea
 
 **BackEnd:**
 
-<img src=[image](https://github.com/ckhariharan/jewelleryshopsystem/assets/133518144/9f2e1905-372e-4991-b2ad-29a66cec563e)>
+<img src=https://github.com/ckhariharan/jewelleryshopsystem/assets/133518144/fe7ad009-72ae-4fc7-99c2-902c9c58f219>
 
 
 ## Features
