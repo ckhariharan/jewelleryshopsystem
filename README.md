@@ -1,10 +1,10 @@
-# JEWELLERY SHOP SYSTEM*
+# *JEWELLERY SHOP SYSTEM*
 
 
 # Table of Contents
 _
 #### 1.   About the Project
-        •	build with
+*•	build with*
 #### 2.	Features
 #### 3.	Installation
 #### 4.	Project Structure
