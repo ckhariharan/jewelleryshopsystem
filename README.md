@@ -69,7 +69,7 @@ The project structure is organized as follows:
 ```
 jewelleryshopsystem/
   |- app/
-     |- controllers/       # Contains AngularJS controllers
+     |- component/         # Contains AngularJS components
      |- services/          # Contains AngularJS services
      |- views/             # Contains AngularJS views
   |- assets/               # Contains static assets (images, stylesheets)
@@ -85,7 +85,6 @@ The Jewellery Shop System relies on the following dependencies:
 
 - AngularJS: A JavaScript-based open-source front-end web application framework.
 - AngularUI Router: A routing framework for AngularJS applications.
-- Bootstrap: A popular HTML, CSS, and JavaScript framework for building responsive web pages.
 - Font Awesome: A library of scalable vector icons.
 
 These dependencies are automatically installed when you run `npm install` as mentioned in the Installation section.
