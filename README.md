@@ -4,7 +4,7 @@
 # Table of Contents
 _
 #### 1.   About the Project
-####       •	build with
+        •	build with
 #### 2.	Features
 #### 3.	Installation
 #### 4.	Project Structure
@@ -16,32 +16,31 @@ _
 
 ## About the project
 
-  **jewellery shop system** is a jewellery shop enterprise developed using Angular 13, Material UI, and IBM CouchDB as the backend database.
+  **jewellery shop system** is a jewellery shop enterprise Billing  developed using Angular 13, Material UI, and IBM CouchDB as the backend database.
   
-As a sole developer, the project will be hosted on **Firebase Hosting.**                                    
+As a sole developer, the project will be hosted on `Firebase Hosting.`                                    
 
-The system includes inline editing within tables and supports **CRUD (Create, Read, Update, Delete)** operations for managing loan-related data.
+The system includes inline editing within tables and supports `CRUD (Create, Read, Update, Delete)` operations for managing loan-related data.
 
+**Project Link**
 
-******Build with******
+    https://jewels-a3762.web.app/
+
+## Build With
+<br>
+
+**FrontEnd:**
 <br>
 <br>
 <img src=https://camo.githubusercontent.com/29026b68c52288230bf32bc2268e47e5c3b81dba23106fb062fcc0541f8e9529/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f416e67756c61722d4444303033313f7374796c653d666f722d7468652d6261646765266c6f676f3d616e67756c6172266c6f676f436f6c6f723d7768697465>
+<br>
+
+**BackEnd:**
+
+<img src=[image](https://github.com/ckhariharan/jewelleryshopsystem/assets/133518144/9f2e1905-372e-4991-b2ad-29a66cec563e)>
+
 
 ## Features
-
-
-
-
-Project         :   Fiscal Note
-Role Played     :   FullStack Devolopment
-IDE             :   Visual Studio Code
-Language        :   Angular , Material UI
-Database        :   IBM Cloud DB
-Project Link    :   https://fiscalnote-a6d09.web.app/
-
-
-
 
 The Jewellery Shop System provides the following features:
 
@@ -60,8 +59,8 @@ To run the Jewellery Shop System on your local machine, follow these steps:
 2. Ensure you have Node.js and npm (Node Package Manager) installed on your machine.
 3. Open a terminal or command prompt and navigate to the project directory.
 4. Run `npm install` to install the project dependencies.
-5. After the installation is complete, run `npm start` to start the application.
-6. Open your web browser and access the application at `http://localhost:3000`.
+5. After the installation is complete, run `ng s` to start the application.
+6. Open your web browser and access the application at `http://localhost:4200/`.
 
 ## Project Structure
 
