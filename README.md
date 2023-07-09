@@ -24,7 +24,7 @@ The system includes inline editing within tables and supports `CRUD (Create, Rea
 
 **Project Link**
 
-    https://jewels-a3762.web.app/
+**https://jewels-a3762.web.app/**
 
 ## Build With
 <br>
@@ -60,7 +60,7 @@ To run the Jewellery Shop System on your local machine, follow these steps:
 3. Open a terminal or command prompt and navigate to the project directory.
 4. Run `npm install` to install the project dependencies.
 5. After the installation is complete, run `ng s` to start the application.
-6. Open your web browser and access the application at `http://localhost:4200/`.
+6. Open your web browser and access the application at http://localhost:4200/.
 
 ## Project Structure
 
