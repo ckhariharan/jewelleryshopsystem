@@ -18,7 +18,7 @@ _
 
   **jewellery shop system** is a jewellery shop enterprise Billing  developed using Angular 13, Material UI, and IBM CouchDB as the backend database.
   
-As a sole developer, the project will be hosted on `Firebase Hosting.`                                    
+             As a sole developer, the project will be hosted on `Firebase Hosting.`                                    
 
 The system includes inline editing within tables and supports `CRUD (Create, Read, Update, Delete)` operations for managing loan-related data.
 
@@ -35,10 +35,11 @@ The system includes inline editing within tables and supports `CRUD (Create, Rea
 <img src=https://camo.githubusercontent.com/29026b68c52288230bf32bc2268e47e5c3b81dba23106fb062fcc0541f8e9529/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f416e67756c61722d4444303033313f7374796c653d666f722d7468652d6261646765266c6f676f3d616e67756c6172266c6f676f436f6c6f723d7768697465>
 <br>
 
-**BackEnd:**
+**DataBase:**
 
-<img src=https://github.com/ckhariharan/jewelleryshopsystem/assets/133518144/fe7ad009-72ae-4fc7-99c2-902c9c58f219>
 
+
+<img src=https://github.com/ckhariharan/jewelleryshopsystem/assets/133518144/b43cad81-f90b-41a9-83d0-8a51642cc09b>
 
 ## Features
 
