@@ -1,33 +1,31 @@
 import { NgModule } from '@angular/core';
-
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Import Angular forms and HTTP modules
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+// Import Angular Material modules
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
-
 import {MatTableModule} from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker'
 import { DatePipe } from '@angular/common';
-
 import {MatSliderModule} from '@angular/material/slider';
-
 import { MatButtonModule } from '@angular/material/button';
-
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+
+
+// Import all components used in the application
 import { HomeComponent } from './component/home/home.component';
 import { CouchpracComponent } from './component/couchprac/couchprac.component';
 import { PurchaseComponent } from './component/purchase/purchase.component';
-
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { LoginComponent } from './component/login/login.component';
 import { Dashboard1Component } from './component/dashboard1/dashboard1.component';
@@ -70,7 +68,6 @@ import { Couchs17Component } from './component/couchs17/couchs17.component';
 import { Couchs18Component } from './component/couchs18/couchs18.component';
 import { Couchs19Component } from './component/couchs19/couchs19.component';
 import { Couchs20Component } from './component/couchs20/couchs20.component';
-
 import { ViewComponent } from './component/view/view.component';
 import { GbangleComponent } from './component/gbangle/gbangle.component';
 import { GnecklesComponent } from './component/gneckles/gneckles.component';
@@ -87,11 +84,11 @@ import { SviewComponent } from './component/sview/sview.component';
 
 @NgModule({
   declarations: [
+    // Declare all the components used in the application
     AppComponent,
     HomeComponent,
     CouchpracComponent,
     PurchaseComponent,
-   
     DashboardComponent,
     LoginComponent,
     Dashboard1Component,
@@ -134,7 +131,6 @@ import { SviewComponent } from './component/sview/sview.component';
     Couchs18Component,
     Couchs19Component,
     Couchs20Component,
-   
     ViewComponent,
     GbangleComponent,
     GnecklesComponent,
@@ -158,15 +154,15 @@ import { SviewComponent } from './component/sview/sview.component';
     MatIconModule,
     MatTableModule,
     MatDatepickerModule,
-     MatFormFieldModule,
-   BrowserAnimationsModule,
-   MatInputModule,MatToolbarModule,
-   MatIconModule,
-   MatSidenavModule,
-   MatButtonModule,
-   MatSliderModule,
-   DatePipe,
-   MatDividerModule,
+    MatFormFieldModule,
+    BrowserAnimationsModule,
+    MatInputModule,MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatSliderModule,
+    DatePipe,
+    MatDividerModule,
 
   ],
   providers: [],
