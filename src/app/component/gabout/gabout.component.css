@@ -1,138 +1,125 @@
 mat-toolbar {
-    background-image:  linear-gradient(rgba(235, 217, 16, 0.582),rgba(237, 237, 22, 0.336)) , url('https://i.pinimg.com/736x/c9/fc/f0/c9fcf0beeb3430dfa4b5a9361e0bf8ea.jpg');
-    color: rgb(209, 73, 73);
-    border-radius: 10px;
-    height:90px;
-  }
-  
-  mat-sidenav {
-    margin: 16px;
-    width: 250px;
-    border-right: none;
-    background:none;
-    color: rgb(188, 182, 102);
-    border-radius: 10px;
-    padding: 16px;
-    text-align: center;
-
-  }
-  
-  .content {
-    height: calc(100vh - 130px);
-    border-radius: 10px;
-    margin: 16px;
-    margin-left: 32px;
-  
-    padding: 16px;
-  
-    overflow: auto;
-  }
-  
-  mat-sidenav-container {
-    height: calc(100vh - 65px);
-  }
-  
-  .menu-button {
-    width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 1rem;
-  }
-    mat-icon {
-      margin-right: 8px;
-    }
-  
-  
-  .avatar {
-    margin-top: 16px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-  }
-  
-  .name {
-    margin-top: 8px;
-    font-weight: normal;
-  }
-  
-  .designation {
-    margin-top: 2px;
-    font-size: 0.7rem;
-    color: lightgrey;
-  }
-  
-  mat-divider {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    background-color: rgba(224, 224, 16, 0.53);
-  }
-  span {
-    color : rgb(255, 255, 255);
-  }
-
-  .logo1 {
-    justify-content: space-between;
-flex-direction: row;
-margin-right:10px;
-
+  background-image: linear-gradient(rgba(235, 217, 16, 0.582), rgba(237, 237, 22, 0.336)),
+    url('https://i.pinimg.com/736x/c9/fc/f0/c9fcf0beeb3430dfa4b5a9361e0bf8ea.jpg');
+  color: rgb(209, 73, 73);
+  border-radius: 10px;
+  height: 90px;
 }
+
+mat-sidenav {
+  margin: 16px;
+  width: 250px;
+  border-right: none;
+  background: none;
+  color: rgb(188, 182, 102);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.content {
+  height: calc(100vh - 130px);
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+  padding: 16px;
+  overflow: auto;
+}
+
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+}
+
+.menu-button {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+
+mat-icon {
+  margin-right: 8px;
+}
+
+.avatar {
+  margin-top: 16px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+.designation {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: lightgrey;
+}
+
+mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(224, 224, 16, 0.53);
+}
+
+span {
+  color: rgb(255, 255, 255);
+}
+
+.logo1 {
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
 .logo1 img {
-    
-    flex-direction: row;
-margin-right:10px;
-height:45vh;
-border-radius: 40px;
-width: 217px;
+  flex-direction: row;
+  margin-right: 10px;
+  height: 45vh;
+  border-radius: 40px;
+  width: 217px;
 }
 
 .logo2 {
-    justify-content: space-between;
-flex-direction: row;
-margin-right:10px;
-text-align: center;
-background-color: antiquewhite;
-height:165px;
-border-radius:30px;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 10px;
+  text-align: center;
+  background-color: antiquewhite;
+  height: 165px;
+  border-radius: 30px;
 }
 
-.logo2 h4{
-    text-transform: capitalize;
-    font-family: Algerian, sans-serif;
-
+.logo2 h4 {
+  text-transform: capitalize;
+  font-family: Algerian, sans-serif;
 }
 
-
-  
-.form
-{ 
-    background-image: linear-gradient(rgba(235, 217, 16, 0.582),rgba(237, 237, 22, 0.336)) , url('https://i.pinimg.com/736x/c9/fc/f0/c9fcf0beeb3430dfa4b5a9361e0bf8ea.jpg');
- height:90vh;
-    background-size:1180px 430px;
-    background-repeat: no-repeat;
-flex-direction: column;
-text-align: center;
-border-radius: 15px;
-margin-top: 5px;
-
-font-size: 20px;
-font-family: Algerian, sans-serif;
-
-
-
+.form {
+  background-image: linear-gradient(rgba(235, 217, 16, 0.582), rgba(237, 237, 22, 0.336)),
+    url('https://i.pinimg.com/736x/c9/fc/f0/c9fcf0beeb3430dfa4b5a9361e0bf8ea.jpg');
+  height: 90vh;
+  background-size: 1180px 430px;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: Algerian, sans-serif;
 }
-button{
+
+button {
   transition-duration: 0.4s;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) ;
- 
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   opacity: 0.5;
-  
 }
-button:hover
-{
-background-color: rgb(183, 185, 180);
-opacity:1;
 
-
-
+button:hover {
+  background-color: rgb(183, 185, 180);
+  opacity: 1;
 }
