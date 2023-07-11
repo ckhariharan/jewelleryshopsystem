@@ -1,138 +1,114 @@
-  
-.form
-{ 
-    background-image: linear-gradient(rgba(235, 217, 16, 0.582),rgba(237, 237, 22, 0.336))  , url('https://i.pinimg.com/736x/c9/fc/f0/c9fcf0beeb3430dfa4b5a9361e0bf8ea.jpg');
-    height: 100vh;
-flex-direction: row;
-text-align: center;
-border-radius: 60px;
-background-repeat: no-repeat;
-background-color: green;
-background-size:1280px 580px;
-
-
-font-size: 20px;
-font-family: Algerian, sans-serif;
-}
-
-
-.form1{
-  background-color: white;
-  backface-visibility:inherit ;
+.form {
+  background-image: linear-gradient(rgba(235, 217, 16, 0.582), rgba(237, 237, 22, 0.336)),
+    url('https://i.pinimg.com/736x/c9/fc/f0/c9fcf0beeb3430dfa4b5a9361e0bf8ea.jpg');
+  height: 100vh;
   flex-direction: row;
-text-align: center;
-border-radius: 60px;
-background-repeat: no-repeat;
-
-background-size:1090px 960px;
-margin-bottom:50px;
-margin-left:230px;
-margin-right: 200px;
-padding: 19px;
-font-size: 20px;
-font-family: Algerian, sans-serif;
-
-
+  text-align: center;
+  border-radius: 60px;
+  background-repeat: no-repeat;
+  background-color: green;
+  background-size: 1280px 580px;
+  font-size: 20px;
+  font-family: Algerian, sans-serif;
 }
-input{
 
-    border: none;
-    border-color: #eee;
-    border-radius: 10px;
-    padding:12px;
-    font-size: 15px;
-    width:150px;
-    text-align: center;
-    text-transform: none;
-    background-color: #efefef;
-    
-    
-   
+.form1 {
+  background-color: white;
+  backface-visibility: inherit;
+  flex-direction: row;
+  text-align: center;
+  border-radius: 60px;
+  background-repeat: no-repeat;
+  background-size: 1090px 960px;
+  margin-bottom: 50px;
+  margin-left: 230px;
+  margin-right: 200px;
+  padding: 19px;
+  font-size: 20px;
+  font-family: Algerian, sans-serif;
+}
 
+input {
+  border: none;
+  border-color: #eee;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 15px;
+  width: 150px;
+  text-align: center;
+  text-transform: none;
+  background-color: #efefef;
 }
 
 nav {
-  
-  
-    display: flex;
-    align-items: center;
-
-height: 90px;
-    border-radius: 30px;
-    
-    
-
-  }
-  
-  .logo1 {
-    margin-right: 350px;
-    margin-top: 180px;
-
-
-    
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 20px;
-    overflow: hidden;
-    margin-top: 160px;
-  }
-  
-  li {
-    float: left;
-    
-  }
-  
-  a {
-    display: block;
-    color: white;
-    text-align: left;
-    padding: 30px ;
-    text-decoration: none;
-    justify-content:space-between;
-    text-transform: capitalize;
-    font-size: 25px;
-    
-  }
-  
-  .menu1 a:hover {
-    background-color: #ddd;
-    color: black;
-    border-radius: 30px;
-    padding:10px;
-  }
-  
-  .logo1 img {
-    max-height: 100px;
-    max-width: 300%;
-    border-radius: 40px;
-    width:150px;
-   background-color:  linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)) ;
-    margin-left:1px;
-    border:#f4ed1c;
-    border-color: bisque;
-  }
-  
-  .logo3 {
-    justify-content: space-between;
-flex-direction: row;
-margin-right:200px;
-margin-left: 40px;
-border-radius: 30px;
-margin-top: 4px;
-height:70vh;
-margin-bottom:5px;
-background-color: rgba(174, 174, 68, 0.336) ;/* rgba(248, 248, 13, 0.336)*/
+  display: flex;
+  align-items: center;
+  height: 90px;
+  border-radius: 30px;
 }
+
+.logo1 {
+  margin-right: 350px;
+  margin-top: 180px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  margin-top: 160px;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 30px;
+  text-decoration: none;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.menu1 a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.logo1 img {
+  max-height: 100px;
+  max-width: 300%;
+  border-radius: 40px;
+  width: 150px;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  margin-left: 1px;
+  border: #f4ed1c;
+  border-color: bisque;
+}
+
+.logo3 {
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 200px;
+  margin-left: 40px;
+  border-radius: 30px;
+  height: 70vh;
+  margin-bottom: 5px;
+  margin-top: 4px;
+  background-color: rgba(174, 174, 68, 0.336); /* rgba(248, 248, 13, 0.336)*/
+}
+
 .logo3 img {
-  
-    flex-direction: row;
-margin-right:0px;
-height:35vh;
-border-radius: 40px;
-width: 300px;
-
-
+  flex-direction: row;
+  margin-right: 0px;
+  height: 35vh;
+  border-radius: 40px;
+  width: 300px;
 }
