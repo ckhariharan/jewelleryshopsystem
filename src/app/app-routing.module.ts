@@ -1,10 +1,10 @@
 import {  NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CouchpracComponent } from './component/couchprac/couchprac.component';
 
+// Import all components used in the routing configuration
+import { CouchpracComponent } from './component/couchprac/couchprac.component';
 import { HomeComponent } from './component/home/home.component';
 import { PurchaseComponent } from './component/purchase/purchase.component';
-
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { LoginComponent } from './component/login/login.component';
 import { Dashboard1Component } from './component/dashboard1/dashboard1.component';
@@ -47,7 +47,6 @@ import { Couchs15Component } from './component/couchs15/couchs15.component';
 import { Couchs16Component } from './component/couchs16/couchs16.component';
 import { Couchs17Component } from './component/couchs17/couchs17.component';
 import { Couchs18Component } from './component/couchs18/couchs18.component';
-
 import { ViewComponent } from './component/view/view.component';
 import { GbangleComponent } from './component/gbangle/gbangle.component';
 import { GearringsComponent } from './component/gearrings/gearrings.component';
@@ -59,18 +58,15 @@ import { SpendantsComponent } from './component/spendants/spendants.component';
 import { SringsComponent } from './component/srings/srings.component';
 import { SnecklesComponent } from './component/sneckles/sneckles.component';
 import { SearringsComponent } from './component/searrings/searrings.component';
-
 import { SviewComponent } from './component/sview/sview.component';
 
 
-
+// Define the routes for the application
 const routes: Routes = [
-
   {path:'',component:HomeComponent},
   {path:'couch',component:CouchpracComponent},
   {path:'purchase',component:PurchaseComponent},
   {path:'purchaseorde',component:PurchaseComponent},
-  
   {path:'dashboard',component:DashboardComponent},
   {path:'dashboard1',component:Dashboard1Component},
   {path:'login',component:LoginComponent},
@@ -115,7 +111,6 @@ const routes: Routes = [
   {path:'couchs18',component:Couchs18Component},
   {path:'couchs19',component:Couchs19Component},
   {path:'couchs20',component:Couchs20Component},
-  
   {path:'view',component:ViewComponent},
   {path:'gbangle',component:GbangleComponent},
   {path:'gearrings',component:GearringsComponent},
@@ -128,12 +123,6 @@ const routes: Routes = [
   {path:'sneckle',component:SnecklesComponent},
   {path:'searring',component:SearringsComponent},
   {path:'sview',component:SviewComponent},
-
- 
-
-
-
-
 ];
 
 @NgModule({
