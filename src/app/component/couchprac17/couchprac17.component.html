@@ -1,89 +1,49 @@
-
 <div class="container">
   <div class="form">
-     <div class="top" style="display: flex;justify-content: space-between;">
+    <div class="top" style="display: flex; justify-content: space-between;">
       <div class="t1">
-<button style="margin-left:150px;margin-top:40px;border-color: rgb(252, 248, 30); border-radius:9px;width:100px;height:40px;font-family: latha, sans-serif;font-display:inherit ;font-size: medium;background:ghostwhite;color:rgb(34, 6, 6)" routerLink="/grings"><b>Back</b></button></div>
+        <button style="margin-left: 150px; margin-top: 40px; border-color: rgb(252, 248, 30); border-radius: 9px; width: 100px; height: 40px; font-family: latha, sans-serif; font-display: inherit; font-size: medium; background: ghostwhite; color: rgb(34, 6, 6)" routerLink="/grings"><b>Back</b></button>
+      </div>
+    </div>
 
+    <div class="form1" style="display: flex; padding-left: 9px; background-color: rgb(255, 255, 255)">
+      <form [formGroup]="employeeFormGroup" style="display: block; margin-right: 20px;">
+        <h2 style="text-align: center; font-family: algerian, sans-serif; font-size: 15px; margin-left: 20px; margin-top: 10px;">Enter your details and buy our products</h2>
+        <h2 style="text-align: left; font-size: 15px; font-family: latha, sans-serif; margin-left: 12px;">Customer Name
+          <div class="in" style="display: flex; padding-left: 10px;">
+            <input placeholder="First name" style="margin-right: 10px;" formControlName="employee_name" type="text" />&nbsp;
+            <input style="background-color: none;" formControlName="dat" readonly name="button" class="custom_button" type="" />
+          </div>
+        </h2>
+        <mat-error style="font-family: 'Times New Roman', Times, serif; font-size: 10px; margin-right: 170px;" *ngIf="employeeFormGroup.get('employee_name')?.invalid"> Only alphabetic characters are allowed.</mat-error>
+
+        <h1 style="text-align: left; font-size: 15px; font-family: latha, sans-serif; margin-left: 12px;">Design &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input style="background-color: none; width: 222px;" formControlName="product" name="button" class="custom_button" type="button" value="" />
+        </h1>
+        <h1 style="text-align: left; font-size: 15px; font-family: latha, sans-serif; margin-left: 12px;">Price Before Discount &nbsp;
+          <input style="background-color: none; width: 222px;" formControlName="amount1" name="button" class="custom_button" type="button" value="" />
+        </h1>
+        <h1 style="text-align: left; font-size: 15px; font-family: latha, sans-serif; margin-left: 12px;">Discount &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input style="background-color: none; width: 222px;" formControlName="perc" name="button" class="custom_button" type="button" value="" />
+        </h1>
+        <h1 style="text-align: left; font-size: 15px; font-family: latha, sans-serif; margin-left: 12px;">Customer Address
+          <textarea style="border-radius: 10px; height: 30px; width: 280px; margin-right: 10px; margin-left: 65px" placeholder="Address..." formControlName="password" type="text"></textarea>
+        </h1>
+      </form>
+
+      <div class="content mat-elevation-z8" style="width: 440px; border-radius: 50px;">
+        <div class="f" style="display: flex;">
+          <div class="logo3">
+            <a routerLink="/couchprac17"><img src='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxESEBITExIVFhUWFxgXFxYYFRcXGhUWFxUWFhYWGBgYHSggGBolGxcVITEhJSkrLi4uFx80ODMtNygtOisBCgoKDg0OGxAQGy0lICYtLSsvLTMvLy0tKzUvLS0tLy0tLS8wLS8vLS0tLS0tLS0tLy0vLy8vLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQIDBAUGB//EADwQAAEDAwIEBAMFBQYHAAAAAAECAwQABREGEgchMRNBUQYUYXGBkRQiFSMyocEVJEOxJDNS8DJDUmKCsdH/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBQT/xAAhEQACAgEDBQEBAAAAAAAAAAAAAQIDEQQhMhMhBBMiYXH/2gAMAwEAAhEDEQA/APbVtbxX7Ts
+            </a>
+          </div>
+          <div class="part2" style="padding-right: 50px;">
+            <div class="address1">
+              <h1 style="font-family: Segoe UI Symbol, sans-serif; font-size: 15px; margin-left: 30px; margin-top: 5px;">Company Name<br>Address Line 1<br>Address Line 2</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="form1" style="display:flex;padding-left: 9px; background-color: rgb(255, 255, 255)">   
-  <form [formGroup]="employeeFormGroup" style="display: block;margin-right: 20px;">
-    <h2 style="text-align: center;font-family: algerian, sans-serif;font-size:15px;margin-left:20px;margin-top: 10px;">enter ur details and buy our products</h2>
-    <h2 style="text-align: left;font-size: 15px;font-family: latha, sans-serif;margin-left: 12px;">Customer_Name
-    <div class="in"style="display:flex;padding-left: 10px; ">
-      <input placeholder="First_name" style="margin-right: 10px;" formControlName="employee_name" type="text" />&nbsp;
-      <input style="background-color: none;" formControlName="dat" readonly name="button" class="custom_button" type=""  />
-</div></h2>
-<mat-error style="font-family: 'Times New Roman', Times, serif; font-size: 10px; margin-right: 170px;" *ngIf="employeeFormGroup.get('employee_name')?.invalid"> Only alphabetic characters are allowed.</mat-error>
-
-
-
-
-<h1 style="text-align: left;font-size: 15px;font-family: latha, sans-serif;margin-left: 12px;">Design &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <input style="background-color: none; width:222px;" formControlName="product" name="button" class="custom_button" type="button" value=""  /></h1>
-   <h1 style="text-align: left;font-size: 15px;font-family: latha, sans-serif;margin-left: 12px;">Price Before Discount &nbsp;
-    <input style="background-color: none; width:222px;" formControlName="amount1" name="button" class="custom_button" type="button" value=""  />
-  </h1>
-  
-  
-  
-  
-  
-  
-  <h1 style="text-align: left;font-size: 15px;font-family: latha, sans-serif;margin-left: 12px;">Discount &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input style="background-color: none; width:222px;" formControlName="perc" name="button" class="custom_button" type="button" value=""  />
-  </h1> 
-  
-<h1 style="text-align: left;font-size: 15px;font-family: latha, sans-serif;margin-left: 12px;">Customer_Address 
-
-  <textarea style="border-radius: 10px;height: 30px;width:280px; margin-right:10px;margin-left:65px" placeholder="Address... " formControlName="password" type="text"></textarea>
-
-</h1>
-</form>
-       
-
-
-
-
-  
-<div class="content mat-elevation-z8" style="width:440px;border-radius: 50px;" >
-<div class="f" style="display:flex; ">
-
-<div class="logo3" >
-<a routerLink="/couchprac17"><img src='data:image/jpeg;base64,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' alt="Logo"></a>
-<div>
-  <section  class="getform">
-    <form  [formGroup]="employeeFormGroup">
-      <h1 style="text-align: left;font-size: 15px;font-family: latha, sans-serif;margin-left: 45px;">Quantity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price After Discount &nbsp;&nbsp;&nbsp;
-             </h1>  
-
-           <h2>
-                           <div class="in"style="display:flex; ">
-                  <input style="width:40px;height:10px;margin-left:40px;" matInput placeholder="qty"  formControlName="quantity" min="1" (click)="calculate()"type="number" />&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                             <input style="width:80px;margin-left: 40px;" placeholder="0" formControlName="b"  name="button" class="custom_button"  type="button" value="{{balan}} ₹"  />
-
-                           </div>
-
-                         <input style="border-radius: 15px;margin-left: 2px;margin-top: 1px;width:70px;border-color: none;font-display:inherit;" name="button" class="custom_button" type="button" value="Buy" [disabled]="!employeeFormGroup.valid" (click)="saveAction()" />
-</h2>
-
-</form>
-</section></div>
-
-</div>
-</div>
-
-</div>
-</div>
-
-
-
-</div>
-
-</div>
-
-
-
-
-
