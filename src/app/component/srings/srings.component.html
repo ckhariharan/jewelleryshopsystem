@@ -1,164 +1,267 @@
+<mat-toolbar class="mat-elevation-z8">
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()"
+    style="margin-left: 50px; border-radius: 10px;">
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
 
-  
-  <mat-toolbar class="mat-elevation-z8">
-    <button
-      mat-icon-button
-      *ngIf="sidenav.mode === 'over'"(click)="sidenav.toggle()" style="margin-left: 50px; border-radius: 10px;">
-      <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
-      <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  <br /> </mat-toolbar>
+
+
+
+<mat-sidenav-container style="background-color:rgba(235, 217, 16, 0.582);border-radius: 20px;">
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+    <img class="avatar mat-elevation-z8" src='/assets/icon.jpg' alt="#" />
+
+    <h4 style="font-size: 11px;color:rgb(239, 253, 39);font-family: algerian, sans-serif;" class="name"><b>CK
+        JEWELLERY's AND DESIGNS</b></h4>
+    <p class="designation" style="color:yellowgreen;font-size:15px;font-family: algerian, sans-serif;">DESIGNS</p>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/purchase">
+      <mat-icon style="color:yellow">home</mat-icon>
+      <span>Home</span>
+
+
     </button>
-   
-  <br/>  </mat-toolbar>
-  
-  
-  
-  <mat-sidenav-container style="background-color:rgba(235, 217, 16, 0.582);border-radius: 20px;">
-    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
-      <img  class="avatar mat-elevation-z8" src='/assets/icon.jpg'alt="#" />
-  
-      <h4 style="font-size: 11px;color:rgb(239, 253, 39);font-family: algerian, sans-serif;" class="name"><b>CK JEWELLERY's AND DESIGNS</b></h4>
-      <p class="designation" style="color:yellowgreen;font-size:15px;font-family: algerian, sans-serif;">DESIGNS</p>
-  
-      <mat-divider></mat-divider>
-  
-      <button mat-button class="menu-button" routerLink="/purchase">
-        <mat-icon style="color:yellow">home</mat-icon>
-         <span>Home</span>
-  
-  
-      </button>
-  
-      <mat-divider></mat-divider>
-  
-      <button mat-button class="menu-button" routerLink="/spendant">
-        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
-        <span>Pendants_Section</span>
-      </button>
-  
-      <button mat-button class="menu-button" routerLink="/sneckle" >
-        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
-        <span>Necklaces_section</span>
-      </button>
 
-      <button mat-button class="menu-button" routerLink="/searring" >
-        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
-        <span>Earrings_Section</span>
-      </button>
-  
-      <button mat-button class="menu-button" routerLink="/sring" >
-        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
-        <span>Rings_Section</span>
-      </button>
-  
-      <mat-divider></mat-divider>
-      <button mat-button class="menu-button"  routerLink="/sview"   >
-        <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+    <mat-divider></mat-divider>
 
-        <span>Read</span>
-      </button>
-      <button mat-button class="menu-button"  routerLink="/sabout" >
-        <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+    <button mat-button class="menu-button" routerLink="/spendant">
+      <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+      <span>Pendants_Section</span>
+    </button>
 
-        <span>About</span>
-      </button>
-  
-    </mat-sidenav>
-  
-   
-    <mat-sidenav-content>
-       
-  
-      <br/>
-      <br/>
-  <h1 style="text-align: center;font-size: 60px;font-family: algerian, sans-serif;">Rings</h1>
-  <h1 style="text-align: center;font-size: 30px;font-family: algerian, sans-serif;"><b>*******</b></h1>
+    <button mat-button class="menu-button" routerLink="/sneckle">
+      <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+      <span>Necklaces_section</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/searring">
+      <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+      <span>Earrings_Section</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/sring">
+      <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+      <span>Rings_Section</span>
+    </button>
+
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" routerLink="/sview">
+      <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+
+      <span>Read</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/sabout">
+      <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+
+      <span>About</span>
+    </button>
+
+  </mat-sidenav>
 
 
-<div class="content mat-elevation-z8" style="height:350px">
+  <mat-sidenav-content>
 
 
-  <section id="s" style="height: 125%;">   <div class="container" style="display:flex;width: 100%; ">
-            <div class="logo1">
-            <a routerLink="/couchs16"><img src='data:image/jpeg;base64,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' alt="Logo"></a>
+    <br />
+    <br />
+    <h1 style="text-align: center;font-size: 60px;font-family: algerian, sans-serif;">Rings</h1>
+    <h1 style="text-align: center;font-size: 30px;font-family: algerian, sans-serif;"><b>*******</b></h1>
+
+
+    <div class="content mat-elevation-z8" style="height:350px">
+
+
+      <section id="s" style="height: 125%;">
+        <div class="container" style="display:flex;width: 100%; ">
+          <div class="logo1">
+            <a routerLink="/couchs16"><img
+                src='data:image/jpeg;base64,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'
+                alt="Logo"></a>
             <div class="logo2">
-              <br/>
-              <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchs16">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)"> Shimmer...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                
-                  <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                    <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;"> ₹ 1,260</b>
-                <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>2,100</del></b>
-                  <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchs16"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                  
-            </div>
-            </div>
-            
-            <div class="logo1">
-                <a routerLink="/couchs17"><img src='https://m.media-amazon.com/images/I/6144gqKwbfL._UY535_.jpg' alt="Logo"></a>
-                <div class="logo2">
-                  <br/>
-                  <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchs17">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)"> White Gol...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                    <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                    
-                      <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                        <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;45%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;"> ₹ 1,760</b>
-                    <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>3,200</del></b>
-                        <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchs17"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                               
-                </div>
-                </div>
-                
-            <div class="logo1">
-                <a routerLink="/couchs18"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8dpyKOqLYAFHO03QPZortxJq-B8y50OwBWw&usqp=CAU' alt="Logo"></a>
-                <div class="logo2">
-                  <br/>
-                  <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchs18">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)"> Draggmep...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                    <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                    
-                      <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                        <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;51%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;"> ₹ 1,078</b>
-                    <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>2,200</del></b>
-                      <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchs18"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                              
-                </div>
-                </div>
-                
-            <div class="logo1">
-                <a routerLink="/couchs19"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbyikkwh_rYh2nLnEztxqqVXhd9KqiD4hv9w&usqp=CAU' alt="Logo"></a>
-                <div class="logo2">
-                  <br/>
-                  <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchs19">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)"> Diamond Mom Ri...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                    <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                    
-                      <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                        <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;"> ₹ 2,960</b>
-                    <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>3,700</del></b>
-                      <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchs19"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                               
-                </div>
-                </div>
-            
-                <div class="logo1">
-                    <a routerLink="/couchs20"><img src='https://i.etsystatic.com/9440653/r/il/64676e/1926680746/il_fullxfull.1926680746_s3ay.jpg' alt="Logo"></a>
-                    <div class="logo2">
-                      <br/>
-                      <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchs20">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)"> Minimalist Stt...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                        <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                        
-                          <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                            <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;48%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;"> ₹ 1,508</b>
-                        <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>2,900</del></b>
-                          <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchs20"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                                   
-                    </div>
-                    </div>
-            </div>
-          </section>
-  <br/><br/>
-  
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchs16">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)"> Shimmer...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
 
-      </div>
-  
-  
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;"> ₹ 1,260</b>
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>2,100</del></b>
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchs16"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+
+          <div class="logo1">
+            <a routerLink="/couchs17"><img src='https://m.media-amazon.com/images/I/6144gqKwbfL._UY535_.jpg'
+                alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchs17">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)"> White Gol...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;45%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;"> ₹ 1,760</b>
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>3,200</del></b>
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchs17"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+
+          <div class="logo1">
+            <a routerLink="/couchs18"><img
+                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8dpyKOqLYAFHO03QPZortxJq-B8y50OwBWw&usqp=CAU'
+                alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchs18">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)"> Draggmep...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;51%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;"> ₹ 1,078</b>
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>2,200</del></b>
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchs18"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+
+          <div class="logo1">
+            <a routerLink="/couchs19"><img
+                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbyikkwh_rYh2nLnEztxqqVXhd9KqiD4hv9w&usqp=CAU'
+                alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchs19">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)"> Diamond Mom Ri...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;"> ₹ 2,960</b>
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>3,700</del></b>
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchs19"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+
+          <div class="logo1">
+            <a routerLink="/couchs20"><img
+                src='https://i.etsystatic.com/9440653/r/il/64676e/1926680746/il_fullxfull.1926680746_s3ay.jpg'
+                alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchs20">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)"> Minimalist Stt...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;48%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;"> ₹ 1,508</b>
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>2,900</del></b>
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchs20"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br />
+
+
+    </div>
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
