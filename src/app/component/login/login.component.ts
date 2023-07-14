@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
@@ -11,43 +11,43 @@ import Swal from 'sweetalert2';
 })
 export class LoginComponent implements OnInit {
 
-constructor(private router:Router){
-  
-}
-email:any="";
-password:any="";
-
-submitForm(form:any):void{
-  if(this.email===""||this.password===""){
-    Swal.fire('please fill all the fields','','warning')
+  constructor(private router: Router) {
 
   }
-  else if(this.email==="hari1@gmail.com" || this.email==="hari2@gmail.com && this.password==="harihari")
-  {
-    localStorage.setItem('email',this.email);
-    this.router.navigateByUrl('purchase');
-    Swal.fire('Login successful','','success')
+  email: any = "";
+  password: any = "";
 
-  }else{
-    Swal.fire('Invalid user ','','warning')
+  submitForm(form: any): void {
+    if (this.email === "" || this.password === "") {
+      Swal.fire('please fill all the fields', '', 'warning')
+
+    }
+    else if (this.email === "hari1@gmail.com" || this.email === "hari2@gmail.com && this.password==="harihari")
+    {
+      localStorage.setItem('email', this.email);
+      this.router.navigateByUrl('purchase');
+      Swal.fire('Login successful', '', 'success')
+
+    }else {
+      Swal.fire('Invalid user ', '', 'warning')
+    }
   }
-}
-notyet():void{
-  Swal.fire('this service not available now:(','','error')
-  
-}
+  notyet(): void {
+    Swal.fire('this service not available now:(', '', 'error')
+
+  }
 
 
 
 
   ngOnInit(): void {
 
-    if(localStorage.getItem('email')!==null){
+    if (localStorage.getItem('email') !== null) {
       this.router.navigateByUrl('/purchase');
     }
   }
 
-  
-  
+
+
 
 }
