@@ -1,177 +1,274 @@
+<mat-toolbar class="mat-elevation-z8">
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()" style="margin-left: 50px;">
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+
+  <br /></mat-toolbar>
 
 
-
-  
-  <mat-toolbar class="mat-elevation-z8">
-    <button
-      mat-icon-button
-      *ngIf="sidenav.mode === 'over'"(click)="sidenav.toggle()" style="margin-left: 50px;">
-      <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
-      <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
-    </button>
-   
-  <br/></mat-toolbar>
-  
-  
 <mat-sidenav-container style="background-color:rgba(235, 217, 16, 0.582);border-radius: 20px;">
-    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
-      <img
-        class="avatar mat-elevation-z8"
-        src='/assets/icon.jpg' alt="#"
-      />
-  
-      <h4 style="font-size: 11px;color:rgb(239, 253, 39);font-family: algerian, sans-serif;" class="name"><b>CK JEWELLERY's AND DESIGNS</b></h4>
-      <p class="designation" style="color:yellowgreen;font-size:15px;font-family: algerian, sans-serif;">DESIGNS</p>
-  
-      <mat-divider></mat-divider>
-  
-      <button mat-button class="menu-button" routerLink="/purchase">
-        <mat-icon style="color:yellow">home</mat-icon>
-         <span>Home</span>
-  
-  
-      </button>
-      <mat-divider></mat-divider>
-      <button mat-button class="menu-button" routerLink="/gbangle" >
-        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
-        <span>Bangles_Section</span>
-      </button>
-      <button mat-button class="menu-button" routerLink="/gneckles" >
-        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
-        <span>Necklace_section</span>
-      </button>
-     
-  
-      <button mat-button class="menu-button" routerLink="/gearrings"  >
-        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
-        <span>Earrings_Section</span>
-      </button>
-  
-      <button mat-button class="menu-button"  routerLink="/grings"  >
-        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
-        <span>Rings_Section</span>
-      </button>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+    <img class="avatar mat-elevation-z8" src='/assets/icon.jpg' alt="#" />
 
-      <mat-divider></mat-divider>
-      <button mat-button class="menu-button"  routerLink="/view"   >
-        <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+    <h4 style="font-size: 11px;color:rgb(239, 253, 39);font-family: algerian, sans-serif;" class="name"><b>CK
+        JEWELLERY's AND DESIGNS</b></h4>
+    <p class="designation" style="color:yellowgreen;font-size:15px;font-family: algerian, sans-serif;">DESIGNS</p>
 
-        <span>Read</span>
-      </button>
-      <button mat-button class="menu-button"  routerLink="/gabout"  >
-        <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+    <mat-divider></mat-divider>
 
-        <span>About</span>
-      </button>
-  
-  
-    </mat-sidenav>
+    <button mat-button class="menu-button" routerLink="/purchase">
+      <mat-icon style="color:yellow">home</mat-icon>
+      <span>Home</span>
 
 
-    <mat-sidenav-content>
-       
-  
-                <br/>
-                <br/>
-            <h1 style="text-align: center;font-size: 60px;font-family: algerian, sans-serif;">Bangles</h1>
-            <h1 style="text-align: center;font-size: 30px;font-family: algerian, sans-serif;"><b>*******</b></h1>
-          
-          
-      <div class="content mat-elevation-z8" style="height:350px">
-          
-  
-            <section id="s" style="height: 125%;">
-            <div class="container" style="display:flex;width: 100%; ">
-              <div class="logo1" >
-              <a routerLink="/couchprac"><img src='https://image.reliancejewels.com/Jewels/images/productImages/757/22-karat-gold-bangles-large_5a45ffd1f26e383c77deaf1074f10a0d.jpg' alt="Logo"></a>
-              <div class="logo2" >
-          <br/>
-          <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Brass Ba...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-          <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-            
-          <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-          <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 2,170 </b><br/>
-          <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del> 3,100</del></b>
-  <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchprac"><b>BUY</b></button></h3></h4></h4></h3></h4>
-          
-          
-          
-          
-                      </div>
-              </div>
-              
-              <div class="logo1">
-                  <a routerLink="/couchprac1"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7b6tQs8yzL5SGLCV4-JuQcOjAOdssgBXCXbR7od7p4bNJ6yY3R4YzHxABA9ik3zSFAeA&usqp=CAU' alt="Logo"></a>
-                  <div class="logo2">
-                    <br/>
-                    <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac1">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Maryam Ch...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                      <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                      
-                        <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                          <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;42%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 2,378</b>
-                    <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>4,100</del></b>
-                    
-  <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchprac1"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                     
-                  </div>
-                  </div>
-                  
-              <div class="logo1">
-                  <a routerLink="/couchprac2"><img src='https://cdn.shopify.com/s/files/1/2552/7688/products/G1198SADFDD-2.jpg' alt="Logo"></a>
-                  <div class="logo2">
-                    <br/>
-                    <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac2">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Allay Ban...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                      <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                      
-                        <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                          <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;39%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 1,464</b>
-                      <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>2,400</del></b>
-                    
-                        <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchprac2"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                        
-                  </div>
-                  </div>
-                  
-              <div class="logo1">
-                  <a routerLink="/couchprac3"><img src='https://media.grtjewels.com/catalog/product/cache/6eb0f58df9ca0d5718cabdcd49ecc2fd/1/9/19b457896_base.jpg' alt="Logo"></a>
-                  <div class="logo2">
-                    <br/>
-                    <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac3">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Omshula La...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                      <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                      
-                        <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                          <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 880</b>
-                      <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>1,100</del></b>
-                    
-                        <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchprac3"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                         
-                  </div>
-                  </div>
-              
-                  <div class="logo1">
-                      <a routerLink="/couchprac4"><img src='https://cdn2.thebridalbox.com/wp-content/uploads/2016/04/Kerala-bridal-bangles-Bridal-bangles.jpg' alt="Logo"></a>
-                      <div class="logo2">
-                        <br/>
-                        <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac4">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Dual Tone...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                          <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                          
-                            <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                              <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;41%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 6,962</b>
-                          <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>11,800</del></b>
-                    
-                            <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchprac4"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                             
-                      </div>
-                      </div>
-              </div>
-            </section>
-          
-      
-  <br/><br/>
-  
-  
-      </div>
-  
-  
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" routerLink="/gbangle">
+      <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+      <span>Bangles_Section</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/gneckles">
+      <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+      <span>Necklace_section</span>
+    </button>
+
+
+    <button mat-button class="menu-button" routerLink="/gearrings">
+      <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+      <span>Earrings_Section</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/grings">
+      <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+      <span>Rings_Section</span>
+    </button>
+
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" routerLink="/view">
+      <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+
+      <span>Read</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/gabout">
+      <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+
+      <span>About</span>
+    </button>
+
+
+  </mat-sidenav>
+
+
+  <mat-sidenav-content>
+
+
+    <br />
+    <br />
+    <h1 style="text-align: center;font-size: 60px;font-family: algerian, sans-serif;">Bangles</h1>
+    <h1 style="text-align: center;font-size: 30px;font-family: algerian, sans-serif;"><b>*******</b></h1>
+
+
+    <div class="content mat-elevation-z8" style="height:350px">
+
+
+      <section id="s" style="height: 125%;">
+        <div class="container" style="display:flex;width: 100%; ">
+          <div class="logo1">
+            <a routerLink="/couchprac"><img
+                src='https://image.reliancejewels.com/Jewels/images/productImages/757/22-karat-gold-bangles-large_5a45ffd1f26e383c77deaf1074f10a0d.jpg'
+                alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchprac">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)">Brass Ba...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;font-size: 12px;"> ₹ 2,170 </b><br />
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b style="color:rgb(159, 82, 82)"><del>
+                            3,100</del></b>
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchprac"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+
+
+
+            </div>
+          </div>
+
+          <div class="logo1">
+            <a routerLink="/couchprac1"><img
+                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7b6tQs8yzL5SGLCV4-JuQcOjAOdssgBXCXbR7od7p4bNJ6yY3R4YzHxABA9ik3zSFAeA&usqp=CAU'
+                alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchprac1">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)">Maryam Ch...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;42%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;font-size: 12px;"> ₹ 2,378</b>
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>4,100</del></b>
+
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchprac1"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+
+          <div class="logo1">
+            <a routerLink="/couchprac2"><img
+                src='https://cdn.shopify.com/s/files/1/2552/7688/products/G1198SADFDD-2.jpg' alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchprac2">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)">Allay Ban...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;39%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;font-size: 12px;"> ₹ 1,464</b>
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>2,400</del></b>
+
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchprac2"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+
+          <div class="logo1">
+            <a routerLink="/couchprac3"><img
+                src='https://media.grtjewels.com/catalog/product/cache/6eb0f58df9ca0d5718cabdcd49ecc2fd/1/9/19b457896_base.jpg'
+                alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchprac3">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)">Omshula La...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;font-size: 12px;"> ₹ 880</b>
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>1,100</del></b>
+
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchprac3"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+
+          <div class="logo1">
+            <a routerLink="/couchprac4"><img
+                src='https://cdn2.thebridalbox.com/wp-content/uploads/2016/04/Kerala-bridal-bangles-Bridal-bangles.jpg'
+                alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchprac4">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)">Dual Tone...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;41%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;font-size: 12px;"> ₹ 6,962</b>
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>11,800</del></b>
+
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchprac4"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <br /><br />
+
+
+    </div>
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
