@@ -8,26 +8,26 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-containerRef!:ViewContainerRef;
+  containerRef!: ViewContainerRef;
 
-constructor(private elementRef:ElementRef ,private router:Router){}
+  constructor(private elementRef: ElementRef, private router: Router) { }
 
 
-home1(home:string):void {
-const element = this.elementRef.nativeElement.querySelection(`#${home} `);
-element.scrollInttoView({behavior : 'smooth', block:'start'});
+  home1(home: string): void {
+    const element = this.elementRef.nativeElement.querySelection(`#${home} `);
+    element.scrollInttoView({ behavior: 'smooth', block: 'start' });
 
-}
+  }
 
-/*
-ngOnInit(): void {
-}
-*/
+  /*
+  ngOnInit(): void {
+  }
+  */
 
-login(){
-  localStorage.removeItem('email');
-this.router.navigateByUrl('/login');
-}
+  login() {
+    localStorage.removeItem('email');
+    this.router.navigateByUrl('/login');
+  }
 
 
 }
