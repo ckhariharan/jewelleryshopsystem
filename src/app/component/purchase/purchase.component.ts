@@ -5,21 +5,21 @@ import { Router } from '@angular/router';
   templateUrl: './purchase.component.html',
   styleUrls: ['./purchase.component.css']
 })
-export class PurchaseComponent implements OnInit{
-  
-
-
-constructor(public router:Router){}
- /* ngOnInit(): void {
-
- }*/
+export class PurchaseComponent implements OnInit {
 
 
 
-logou(){
-  localStorage.removeItem('email');
-this.router.navigateByUrl('/home');
-}
+  constructor(public router: Router) { }
+  /* ngOnInit(): void {
+ 
+  }*/
+
+
+
+  logou() {
+    localStorage.removeItem('email');
+    this.router.navigateByUrl('/home');
+  }
 
 
 }
