@@ -1,92 +1,96 @@
-
-  
 <mat-toolbar class="mat-elevation-z8">
-  <button
-    mat-icon-button
-    *ngIf="sidenav.mode === 'over'"(click)="sidenav.toggle()" style="margin-left: 50px;">
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()" style="margin-left: 50px;">
     <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
     <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
   </button>
- 
+
 </mat-toolbar>
 
 
 
 <mat-sidenav-container style="background-color:rgba(235, 217, 16, 0.582);border-radius: 20px;">
-  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8" >  <img class="avatar mat-elevation-z8" src='/assets/icon.jpg'  alt="#" />
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8"> <img class="avatar mat-elevation-z8"
+      src='/assets/icon.jpg' alt="#" />
 
-    <h4 style="font-size: 11px;color:rgb(239, 253, 39);font-family: algerian, sans-serif;" class="name"><b>CK JEWELLERY's AND DESIGNS</b></h4>
+    <h4 style="font-size: 11px;color:rgb(239, 253, 39);font-family: algerian, sans-serif;" class="name"><b>CK
+        JEWELLERY's AND DESIGNS</b></h4>
     <p class="designation" style="color:yellowgreen;font-size:15px;font-family: algerian, sans-serif;">DESIGNS</p>
 
     <mat-divider></mat-divider>
 
     <button mat-button class="menu-button" routerLink="/purchase">
       <mat-icon style="color:rgb(251, 251, 6)">home</mat-icon>
-       <span>Home</span>
+      <span>Home</span>
 
 
     </button>
     <mat-divider></mat-divider>
-    <button mat-button class="menu-button" routerLink="/gbangle" >
+    <button mat-button class="menu-button" routerLink="/gbangle">
       <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
       <span style="margin-right:10px;">Bangles_Section</span>
     </button>
-    <button mat-button class="menu-button" routerLink="/gneckles" >
+    <button mat-button class="menu-button" routerLink="/gneckles">
       <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
 
       <span>Necklace_section</span>
     </button>
-   
 
-    <button mat-button class="menu-button" routerLink="/gearrings"  >
+
+    <button mat-button class="menu-button" routerLink="/gearrings">
       <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
 
-      <span  style="margin-right:10px;">Earrings_Section</span>
+      <span style="margin-right:10px;">Earrings_Section</span>
     </button>
 
-    <button mat-button class="menu-button"  routerLink="/grings"  >
+    <button mat-button class="menu-button" routerLink="/grings">
       <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
 
-      <span  style="justify-content: left;">Rings_Section</span>
+      <span style="justify-content: left;">Rings_Section</span>
     </button>
 
     <mat-divider></mat-divider>
-   
-    <button mat-button class="menu-button"  routerLink="/gabout"  >
+
+    <button mat-button class="menu-button" routerLink="/gabout">
       <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
 
-      <span  style="margin-right:10px;">About</span>
+      <span style="margin-right:10px;">About</span>
     </button>
 
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <div class="content mat-elevation-z8" >
+    <div class="content mat-elevation-z8">
       <section id="h" style="height: 90%;background-color: rgb(219, 167, 34);border-radius: 10px;">
-        
-        
+
+
         <div class="form">
-        
-         
+
+
           <br>
-         <br>
-         <br>
-           
-        
-         
-         <h2 style="margin-top:85px;margin-left:50px;font-size:30px;font-family:Algerian, sans-serif;text-align:center;color:rgb(243, 140, 37)"> welcome to our</h2><br/>
-         <h3 style="margin-top:10px;font-size:70px;font-family:Algerian, sans-serif;text-align:center;color:rgb(209, 121, 32);margin-left: 20px;">Gold Section</h3>
-         <h3 style="margin-top:20px;margin-left:50px;font-size:10px;font-family:Berlin Sans FB Demi, sans-serif;color:black"><b>Add More Glomour To Your Style With Our Gorgeous jewellery collection</b></h3>
-        
-         </div>
+          <br>
+          <br>
+
+
+
+          <h2
+            style="margin-top:85px;margin-left:50px;font-size:30px;font-family:Algerian, sans-serif;text-align:center;color:rgb(243, 140, 37)">
+            welcome to our</h2><br />
+          <h3
+            style="margin-top:10px;font-size:70px;font-family:Algerian, sans-serif;text-align:center;color:rgb(209, 121, 32);margin-left: 20px;">
+            Gold Section</h3>
+          <h3
+            style="margin-top:20px;margin-left:50px;font-size:10px;font-family:Berlin Sans FB Demi, sans-serif;color:black">
+            <b>Add More Glomour To Your Style With Our Gorgeous jewellery collection</b></h3>
+
+        </div>
 
       </section>
-<br/><br/>
+      <br /><br />
 
 
 
 
-        
+
     </div>
 
 
