@@ -1,174 +1,269 @@
+<mat-toolbar class="mat-elevation-z8">
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()" style="margin-left: 50px;">
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+
+  <br /> </mat-toolbar>
 
 
 
-  
-  <mat-toolbar class="mat-elevation-z8">
-    <button
-      mat-icon-button
-      *ngIf="sidenav.mode === 'over'"(click)="sidenav.toggle()" style="margin-left: 50px;">
-      <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
-      <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
-    </button>
-   
-  <br/>  </mat-toolbar>
-  
-  
-  
 <mat-sidenav-container style="background-color:rgba(235, 217, 16, 0.582);border-radius: 20px;">
-    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
-      <img
-        class="avatar mat-elevation-z8"
-        src='/assets/icon.jpg'  alt="#" 
-      />
-  
-      <h4 style="font-size: 11px;color:rgb(239, 253, 39);font-family: algerian, sans-serif;" class="name"><b>CK JEWELLERY's AND DESIGNS</b></h4>
-      <p class="designation" style="color:yellowgreen;font-size:15px;font-family: algerian, sans-serif;">DESIGNS</p>
-  
-      <mat-divider></mat-divider>
-  
-      <button mat-button class="menu-button" routerLink="/purchase">
-        <mat-icon style="color:yellow">home</mat-icon>
-         <span>Home</span>
-  
-  
-      </button>
-      <mat-divider></mat-divider>
-      <button mat-button class="menu-button" routerLink="/gbangle" >
-        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
-        <span>Bangles_Section</span>
-      </button>
-      <button mat-button class="menu-button" routerLink="/gneckles" >
-        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
-        <span>Necklace_section</span>
-      </button>
-     
-  
-      <button mat-button class="menu-button" routerLink="/gearrings"  >
-        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
-        <span>Earrings_Section</span>
-      </button>
-  
-      <button mat-button class="menu-button"  routerLink="/grings"  >
-        <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
-        <span>Rings_Section</span>
-      </button>
-    
-      <mat-divider></mat-divider>
-      <button mat-button class="menu-button"  routerLink="/view"   >
-        <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+    <img class="avatar mat-elevation-z8" src='/assets/icon.jpg' alt="#" />
 
-        <span>Read</span>
-      </button>
-      <button mat-button class="menu-button"  routerLink="/gabout"  >
-        <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+    <h4 style="font-size: 11px;color:rgb(239, 253, 39);font-family: algerian, sans-serif;" class="name"><b>CK
+        JEWELLERY's AND DESIGNS</b></h4>
+    <p class="designation" style="color:yellowgreen;font-size:15px;font-family: algerian, sans-serif;">DESIGNS</p>
 
-        <span>About</span>
-      </button>
-  
-  
-    </mat-sidenav>
+    <mat-divider></mat-divider>
 
-    <mat-sidenav-content>
-      <br/>
-      <br/>
-      <h1 style="text-align: center;font-size: 60px;font-family: algerian, sans-serif;">Rings</h1>
-      <h1 style="text-align: center;font-size: 30px;font-family: algerian, sans-serif;"><b>*******</b></h1>
-    
-    
-<div class="content mat-elevation-z8" style="height:350px">
-    
+    <button mat-button class="menu-button" routerLink="/purchase">
+      <mat-icon style="color:yellow">home</mat-icon>
+      <span>Home</span>
+
+
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" routerLink="/gbangle">
+      <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+      <span>Bangles_Section</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/gneckles">
+      <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+      <span>Necklace_section</span>
+    </button>
+
+
+    <button mat-button class="menu-button" routerLink="/gearrings">
+      <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+      <span>Earrings_Section</span>
+    </button>
+
+    <button mat-button class="menu-button" routerLink="/grings">
+      <mat-icon style="color:rgb(99, 245, 26)">home</mat-icon>
+      <span>Rings_Section</span>
+    </button>
+
+    <mat-divider></mat-divider>
+    <button mat-button class="menu-button" routerLink="/view">
+      <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+
+      <span>Read</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/gabout">
+      <mat-icon style="color:rgb(205, 245, 26)">home</mat-icon>
+
+      <span>About</span>
+    </button>
+
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <br />
+    <br />
+    <h1 style="text-align: center;font-size: 60px;font-family: algerian, sans-serif;">Rings</h1>
+    <h1 style="text-align: center;font-size: 30px;font-family: algerian, sans-serif;"><b>*******</b></h1>
+
+
+    <div class="content mat-elevation-z8" style="height:350px">
+
 
       <section id="s" style="height: 125%;">
-           <div class="container" style="display:flex;width: 100%; ">
-              <div class="logo1">
-              <a routerLink="/couchprac15"><img src='https://staticimg.titan.co.in/Tanishq/Catalog/511240FAGAA00_2.jpg' alt="Logo"></a>
-              <div class="logo2">
-                <br/>
-                <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac14">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Intertined gl...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                  <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                  
-                    <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                      <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;39%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 25,193</b>
-                  <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>41,300</del></b>
-                 
-                    <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchprac15"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                      
-              </div>
-              </div>
-              
-              <div class="logo1">
-                  <a routerLink="/couchprac16"><img src='https://img0.junaroad.com/uiproducts/15738911/zoom_0-1542713311.jpg' alt="Logo"></a>
-                  <div class="logo2">
-                    <br/>
-                    <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac14">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Glowing Hea...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                      <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                      
-                        <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                          <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 14,070</b>
-                      <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>20,100</del></b>
-                    
-                        <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchprac16"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                           
-                  </div>
-                  </div>
-              <div class="logo1">
-                  <a routerLink="/couchprac17"><img src='data:image/jpeg;base64,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' alt="Logo"></a>
-                  <div class="logo2">
-                    <br/>
-                    <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac14">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Alloy Gol...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                      <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                      
-                        <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                          <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 12,440</b>
-                      <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>31,100</del></b>
-                    
-                        <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchprac17"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                          
-                  </div>
-                  </div>
-                  
-              <div class="logo1">
-                  <a routerLink="/couchprac18"><img src='data:image/jpeg;base64,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' alt="Logo"></a>
-                  <div class="logo2">
-                    <br/>
-                    <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac14">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Ladies Gesi...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                      <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                      
-                        <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                          <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;44%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 6,216</b>
-                      <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>11,100</del></b>
-                    
-                        <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchprac18"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                         
-                  </div>
-                  </div>
-              
-                  <div class="logo1">
-                      <a routerLink="/couchprac19"><img src='data:image/jpeg;base64,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' alt="Logo"></a>
-                      <div class="logo2">
-                        <br/>
-                        <h4 ><b style="color:gray;font-size:14px;" routerLink="/couchprac14">Design - &nbsp;&nbsp;<b style="color:rgb(26, 119, 156)">Round Cut Gr...</b><hr style="margin-left:20px;margin-right: 20px;" ></b>
-                          <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp; 
-                          
-                            <h4 style=" text-align: left;" >&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
-                              <h4 ><b style="color:red;font-size: 13px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60%</b> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:black;font-size: 12px;"> ₹ 12,440</b>
-                          <h3 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:gray;font-size: 13px;">M.R.P :</b>  ₹<b style="color:rgb(159, 82, 82)"><del>31,100</del></b>
-                        
-                            <br/><button style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;" routerLink="/couchprac19"><b>BUY</b></button></h3></h4></h4></h3></h4>
-                               
-                      </div>
-                      </div>
-              </div>
-            </section>
-        
-  <br/><br/>
-  
-  
-  
-  
-  
-      </div>
-  
-  
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+        <div class="container" style="display:flex;width: 100%; ">
+          <div class="logo1">
+            <a routerLink="/couchprac15"><img src='https://staticimg.titan.co.in/Tanishq/Catalog/511240FAGAA00_2.jpg'
+                alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchprac14">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)">Intertined gl...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;39%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;font-size: 12px;"> ₹ 25,193</b>
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>41,300</del></b>
+
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchprac15"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+
+          <div class="logo1">
+            <a routerLink="/couchprac16"><img src='https://img0.junaroad.com/uiproducts/15738911/zoom_0-1542713311.jpg'
+                alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchprac14">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)">Glowing Hea...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;font-size: 12px;"> ₹ 14,070</b>
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>20,100</del></b>
+
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchprac16"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+          <div class="logo1">
+            <a routerLink="/couchprac17"><img
+                src='data:image/jpeg;base64,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'
+                alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchprac14">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)">Alloy Gol...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;font-size: 12px;"> ₹ 12,440</b>
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>31,100</del></b>
+
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchprac17"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+
+          <div class="logo1">
+            <a routerLink="/couchprac18"><img
+                src='data:image/jpeg;base64,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'
+                alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchprac14">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)">Ladies Gesi...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;44%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;font-size: 12px;"> ₹ 6,216</b>
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>11,100</del></b>
+
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchprac18"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+
+          <div class="logo1">
+            <a routerLink="/couchprac19"><img
+                src='data:image/jpeg;base64,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'
+                alt="Logo"></a>
+            <div class="logo2">
+              <br />
+              <h4><b style="color:gray;font-size:14px;" routerLink="/couchprac14">Design - &nbsp;&nbsp;<b
+                    style="color:rgb(26, 119, 156)">Round Cut Gr...</b>
+                  <hr style="margin-left:20px;margin-right: 20px;">
+                </b>
+                <h3 style="font-size: 15px;margin-right: 13px;font-family:latha, sans-serif;">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Deal of the Day </b>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <h4 style=" text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;<b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> &nbsp;&nbsp;&nbsp;Discount</b>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b
+                      style="color:rgb(150, 148, 111);font-size: 12px;"> Rate</b>
+                    <h4><b style="color:red;font-size: 13px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60%</b> &nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                        style="color:black;font-size: 12px;"> ₹ 12,440</b>
+                      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
+                          style="color:gray;font-size: 13px;">M.R.P :</b> ₹<b
+                          style="color:rgb(159, 82, 82)"><del>31,100</del></b>
+
+                        <br /><button
+                          style="border-color: ghostwhite;margin-left: 85px; border-radius:9px;height:30px;font-family: latha, sans-serif;font-display: grid-template ;width:50px;"
+                          routerLink="/couchprac19"><b>BUY</b></button>
+                      </h3>
+                    </h4>
+                  </h4>
+                </h3>
+              </h4>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br /><br />
+
+
+
+
+
+    </div>
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
