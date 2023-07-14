@@ -1,54 +1,61 @@
-
-
-<div class="container1" style=" background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)) , url('/assets/backside1.png');filter:brightness(100%);height:870px;  background-repeat: no-repeat;">
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-<div class="header">
+<div class="container1"
+  style=" background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)) , url('/assets/backside1.png');filter:brightness(100%);height:870px;  background-repeat: no-repeat;">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <div class="header">
     <h1 style="padding-top: 50px;text-align: center;font-family:algerian, sans-serif;font-size: 60px;">Welcome</h1>
-   </div>
-    <br/>
-
-
-<br/>
-<br/>
-<br/>
-    
-    <div class="container" style="display:flex;width: 100%; ">
-    <div class="logo1">
-  
-<div class="backside" style="background-color:none;height:450px;margin-left:180px;width:450px;border-radius: 10px;">
-    <div class="form1">
-        <br/>
-        
-        <h1 style="text-align: center;font-family: Algerian, sans-serif;padding-top:20px;">Login</h1>
-        <h2 style="text-align: center;font-family: Algerian, sans-serif ;">Please Enter Your Email and Password</h2>
-    
-       
-        
-
-  <form #myForm="ngForm" (ngSubmit)="submitForm(myForm)">
-    <div class="input" style="border-radius:20px;background-color: none;text-align: center;">
-      <input style="border-color:ghostwhite;border-radius: 10px;text-decoration: none; height:40px; margin-right:70px;margin-top: 30px;width:250px;text-align: center;font-family: latha, sans-serif;font-size:20px;text-transform: none;background-color:none;" type="email" name="email" placeholder="MailId "[(ngModel)]="email" ngModel required><br/>
-      <input style="border-color: ghostwhite;border-radius: 10px;text-decoration: none; height:40px; margin-right:70px;margin-top: 30px;width:250px;text-align: center;font-family: latha, sans-serif;font-size:20px;text-transform: lowercase ;"type="password" name="password" placeholder="Password" [(ngModel)]="password" ngModel required><br/><br/>
-    </div>
-    <br/>
-    
-    <br/><button type="submit" style="margin-bottom:30px;margin-left: 160px;border-radius:10px;width:90px;border-color: ghostwhite; height:40px;font-family: latha, sans-serif;font-display: grid-template ;font-size: medium;background:lightgray;"><b>Login</b></button>
-  </form>
   </div>
-</div>
+  <br />
 
 
-    </div>
-    
-    <div class="logo1" >
-        <a routerLink="/login"><img src='/assets/jewelquote.png' alt="Logo" style="height:480px;width:430px; filter: brightness(100px);"></a>
-     
+  <br />
+  <br />
+  <br />
+
+  <div class="container" style="display:flex;width: 100%; ">
+    <div class="logo1">
+
+      <div class="backside"
+        style="background-color:none;height:450px;margin-left:180px;width:450px;border-radius: 10px;">
+        <div class="form1">
+          <br />
+
+          <h1 style="text-align: center;font-family: Algerian, sans-serif;padding-top:20px;">Login</h1>
+          <h2 style="text-align: center;font-family: Algerian, sans-serif ;">Please Enter Your Email and Password</h2>
+
+
+
+
+          <form #myForm="ngForm" (ngSubmit)="submitForm(myForm)">
+            <div class="input" style="border-radius:20px;background-color: none;text-align: center;">
+              <input
+                style="border-color:ghostwhite;border-radius: 10px;text-decoration: none; height:40px; margin-right:70px;margin-top: 30px;width:250px;text-align: center;font-family: latha, sans-serif;font-size:20px;text-transform: none;background-color:none;"
+                type="email" name="email" placeholder="MailId " [(ngModel)]="email" ngModel required><br />
+              <input
+                style="border-color: ghostwhite;border-radius: 10px;text-decoration: none; height:40px; margin-right:70px;margin-top: 30px;width:250px;text-align: center;font-family: latha, sans-serif;font-size:20px;text-transform: lowercase ;"
+                type="password" name="password" placeholder="Password" [(ngModel)]="password" ngModel
+                required><br /><br />
+            </div>
+            <br />
+
+            <br /><button type="submit"
+              style="margin-bottom:30px;margin-left: 160px;border-radius:10px;width:90px;border-color: ghostwhite; height:40px;font-family: latha, sans-serif;font-display: grid-template ;font-size: medium;background:lightgray;"><b>Login</b></button>
+          </form>
         </div>
-        
+      </div>
+
+
     </div>
-    
+
+    <div class="logo1">
+      <a routerLink="/login"><img src='/assets/jewelquote.png' alt="Logo"
+          style="height:480px;width:430px; filter: brightness(100px);"></a>
+
+    </div>
+
+  </div>
+
 </div>
